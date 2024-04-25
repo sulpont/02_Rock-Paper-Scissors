@@ -162,10 +162,10 @@ const v3 = document.getElementById('sfxDraw');
 v3.volume = 0.6;
 
 // Player Name
-const $input = document.getElementById('input');
-const $playerName = document.getElementById('playerName');
-$input.addEventListener('input', function () {
-    $playerName.textContent = this.value;
+const input = document.getElementById('input');
+const playerName = document.getElementById('playerName');
+input.addEventListener('input', function () {
+    playerName.textContent = this.value;
 });
 
 // Player Name hidden Button
