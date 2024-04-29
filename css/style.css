@@ -61,6 +61,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     font-size: 1.2rem;
     color: #fff;
+    margin-bottom: 30px;
 }
 
 .score-win {
@@ -170,4 +171,12 @@ body {
 
 .hide {
     display: none;
+}
+
+.command_img {
+    padding-top: 60px;
+}
+
+.detection {
+    margin: 30px auto;
 }
