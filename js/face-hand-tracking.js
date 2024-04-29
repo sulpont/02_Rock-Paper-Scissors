@@ -7,7 +7,7 @@ let model;
 const options = {
     flipHorizontal: true,
     maxNumBoxes: 3,
-    scoreThreshold: 0.7,
+    scoreThreshold: 0.8,
 }
 
 let context = canvas.getContext("2d");
@@ -33,6 +33,15 @@ function startDetection() {
     model.detect(video).then((predictions) => {
         model.renderPredictions(predictions, canvas, context, video);
         requestAnimationFrame(startDetection);
+
+        // console.log(predictions);
+
+        // console.log(predictions.slice(2, 2));
+        // if (predictions === 'face') {
+        //     console.log(predictions);
+        // }
     });
 };
 
+//close point openのみログ出力
+// x: Array(4), class: 5, label: 'face', score: '0.98'} 配列の2
