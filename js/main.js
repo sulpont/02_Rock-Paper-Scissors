@@ -285,29 +285,29 @@ document.addEventListener('keyup', function (event) {
 キー入力を配列に格納する（工事中）
 ------------------------- */
 
-// window.addEventListener('DOMContentLoaded', function () {
-//     let key_input = new Array();
+window.addEventListener('DOMContentLoaded', function () {
+    let key_input = new Array();
 
-//     window.addEventListener('keydown', function (e) {
-//         e.preventDefault();
-//         key_input.push(e.key);
-//     });
+    window.addEventListener('keydown', function (e) {
+        e.preventDefault();
+        key_input.push(e.key);
+    });
 
-//     window.addEventListener('keyup', function (e) {
-//         if (0 < key_input.length) {
-//             console.log(key_input);
-//             key_input = new Array();  //配列を初期化しないと、ログが蓄積され続ける
-//         }
+    window.addEventListener('keyup', function (e) {
+        if (0 < key_input.length) {
+            console.log(key_input);
+            key_input = new Array();  //配列を初期化しないと、ログが蓄積され続ける
+        }
 
-// let commandResult = key_input.includes('ArrowDown', 'ArrowDown', 'ArrowRight', 'ArrowRight', 'p');
-// console.log(commandResult);
-// includesメソッドは、要素の複数指定ができない
+        // let commandResult = key_input.includes('ArrowDown', 'ArrowDown', 'ArrowRight', 'ArrowRight', 'p');
+        // console.log(commandResult);
+        // includesメソッドは、要素の複数指定ができない
 
-// let filterResult = key_input.filter(function (filterValue) {
-//     return filterValue === 'p';
-// })
-// console.log(filterResult);
-// filterメソッドも何となくダメ
+        // let filterResult = key_input.filter(function (filterValue) {
+        //     return filterValue === 'p';
+        // })
+        // console.log(filterResult);
+        // filterメソッドも何となくダメ
 
-//     });
-// });
+    });
+});
